@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Number Guessing Game</title>
 
   <!-- Google Font -->
@@ -20,7 +21,8 @@
       margin: 0;
       font-family: 'Prompt', sans-serif;
       background: #1a1a1a;
-      overflow: hidden;
+      min-height: 100vh;
+      overflow-y: auto;
     }
 
     .icon-bg {
@@ -56,8 +58,13 @@
     }
 
     @keyframes float {
-      from { transform: translateY(0); }
-      to { transform: translateY(-200vh); }
+      from {
+        transform: translateY(0);
+      }
+
+      to {
+        transform: translateY(-200vh);
+      }
     }
 
     #wrapper {
@@ -95,7 +102,8 @@
       text-align: center;
     }
 
-    #subt, #play-again {
+    #subt,
+    #play-again {
       width: 100%;
       padding: 15px;
       font-size: 1.2rem;
@@ -108,7 +116,8 @@
       transition: background 0.3s ease;
     }
 
-    #subt:hover, #play-again:hover {
+    #subt:hover,
+    #play-again:hover {
       background-color: #e85d04;
     }
 
@@ -116,7 +125,8 @@
       margin-top: 30px;
     }
 
-    .guesses, .lastResult {
+    .guesses,
+    .lastResult {
       display: inline-block;
       font-weight: 600;
       font-size: 1.1rem;
@@ -144,12 +154,19 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="icon-bg">
-    <svg width="100" height="100"><circle cx="50" cy="50" r="40" /></svg>
-    <svg width="80" height="80"><rect x="10" y="10" width="60" height="60" /></svg>
-    <svg width="90" height="90"><polygon points="45,10 10,80 80,80" /></svg>
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" />
+    </svg>
+    <svg width="80" height="80">
+      <rect x="10" y="10" width="60" height="60" />
+    </svg>
+    <svg width="90" height="90">
+      <polygon points="45,10 10,80 80,80" />
+    </svg>
   </div>
 
   <div id="wrapper">
@@ -168,9 +185,10 @@
       <p>Guesses Remaining: <span class="lastResult">10</span></p>
       <p class="lowOrHi"></p>
     </div>
-       <button id="play-again">Play Again</button>
-    </div>
+    <button id="play-again">Play Again</button>
+  </div>
 
   <script src="number2.js"></script>
 </body>
+
 </html>
