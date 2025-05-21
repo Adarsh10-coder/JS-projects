@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>BMI Calculator</title>
   <style>
     * {
@@ -15,11 +14,55 @@
     }
 
     body {
-      background: linear-gradient(to right, #7b448e, #7b2099);
+      background: linear-gradient(to right, #26122d, #3c084f);
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .icon-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .icon-bg svg {
+      position: absolute;
+      fill: rgba(255, 255, 255, 0.05);
+      animation: float 25s linear infinite;
+    }
+
+    .icon-bg svg:nth-child(1) {
+      top: 10%;
+      left: 5%;
+      animation-delay: 0s;
+    }
+
+    .icon-bg svg:nth-child(2) {
+      top: 40%;
+      left: 70%;
+      animation-delay: 10s;
+    }
+
+    .icon-bg svg:nth-child(3) {
+      top: 70%;
+      left: 30%;
+      animation-delay: 5s;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      100% {
+        transform: translateY(-200vh) rotate(360deg);
+      }
     }
 
     .container {
@@ -29,6 +72,7 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       padding: 30px;
       text-align: center;
+      z-index: 1;
     }
 
     h1 {
@@ -98,6 +142,13 @@
 </head>
 
 <body>
+    
+  <div class="icon-bg">
+    <svg width="80" height="80"><circle cx="40" cy="40" r="30" /></svg>
+    <svg width="70" height="70"><rect x="10" y="10" width="50" height="50" rx="8" /></svg>
+    <svg width="100" height="100"><polygon points="50,10 10,90 90,90" /></svg>
+  </div>
+
   <div class="container">
     <h1>BMI Calculator</h1>
     <form>
