@@ -1,8 +1,8 @@
 :root {
       --bg-color: #1e1e1e;
-      --display-color: #fff;
+      --display-color: #fefae0;
       --btn-bg: #2a2a2a;
-      --btn-color: #eee;
+      --btn-color: #fefae0;
       --accent-color: #6b5a84;
       --equal-color: #8d3ff2;
       --action-color: #ffc107;
@@ -10,9 +10,9 @@
     }
 
     body.light {
-      --bg-color: #f0f0f0;
+      --bg-color: #c0ba96;
       --display-color: #111;
-      --btn-bg: #fff;
+      --btn-bg: #fefae0;
       --btn-color: #333;
       --accent-color: #6b5a84;
       --equal-color: #6a0dad;
