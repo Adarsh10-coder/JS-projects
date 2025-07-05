@@ -31,7 +31,7 @@ notesContainer.addEventListener("click",function(e){
     else if(e.target.tagName === 'p'){
         notes = document.querySelectorAll(".input-box");
         notes.forEach(nt =>{
-            nt.onkeyup = function(){
+            nt.keyup = function(){
                 updateStorage();
             }
         })
