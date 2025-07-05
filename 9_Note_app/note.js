@@ -20,7 +20,7 @@ createBtn.addEventListener("click",()=>{
     notesContainer.appendChild(inputBox).appendChild(img);
 
     inputBox.addEventListener("keyup", updateStorage);
-    updateStorage();
+    //updateStorage();
 })
 
 notesContainer.addEventListener("click",function(e){
