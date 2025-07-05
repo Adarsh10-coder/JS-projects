@@ -9,7 +9,6 @@
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg, #cf9aff, #95c0ff);
-    ;
     padding-top: 4%;
     padding-left: 10%;
 }
@@ -46,6 +45,7 @@
 }
 
 .input-box {
+    display: flex;
     position: relative;
     width: 100%;
     max-width: 500px;
