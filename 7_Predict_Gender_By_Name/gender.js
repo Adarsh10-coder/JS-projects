@@ -8,7 +8,7 @@ let predictGender = () => {
   console.log(finalURL);
   wrapper.innerHTML = "";
   error.innerHTML = "";
-  //Check if input field is not empty and the entered name does not contain anything but alphabets.
+  
   if (name.length > 0 && /^[A-Za-z]+$/.test(name)) {
     fetch(finalURL)
       .then((resp) => resp.json())
