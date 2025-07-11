@@ -81,3 +81,28 @@ form button{
 .input-group span i{
     color: seagreen;
 }
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container form {
+        padding: 40px 20px 20px;
+    }
+
+    .fa-paper-plane {
+        font-size: 22px;
+        padding: 16px;
+    }
+
+    form button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .input-group span {
+        bottom: 6px;
+        font-size: 12px;
+    }
+}
